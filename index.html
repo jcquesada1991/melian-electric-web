@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MELIAN ELECTRIC CORP — Electricista en Florida | Residencial y Comercial</title>
+  <meta name="description" content="MELIAN ELECTRIC CORP — servicio eléctrico residencial y comercial en Florida: paneles, cableado, iluminación, reparaciones y obra nueva. Presupuesto sin compromiso. Llame al (786) 246-1158." />
+  <meta name="theme-color" content="#17181C" />
+  <link rel="canonical" href="https://melianelectriccorp.com/" />
+
+  <!-- Local business structured data (Electrician) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "MELIAN ELECTRIC CORP",
+    "image": "https://melianelectriccorp.com/img/og-cover.jpg",
+    "@id": "https://melianelectriccorp.com/#business",
+    "url": "https://melianelectriccorp.com/",
+    "telephone": "+1-786-246-1158",
+    "email": "miguelmelian737@gmail.com",
+    "priceRange": "$$",
+    "founder": "José Miguel Melián",
+    "areaServed": [
+      { "@type": "State", "name": "Florida" },
+      { "@type": "AdministrativeArea", "name": "South Florida" }
+    ],
+    "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" },
+    "knowsLanguage": ["es", "en"],
+    "slogan": "Power you can trust.",
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential electrical service" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial & industrial electrical" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electrical panel upgrades" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lighting installation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electrical troubleshooting & repairs" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "New construction wiring" } }
+    ]
+  }
+  </script>
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MELIAN ELECTRIC CORP" />
+  <meta property="og:title" content="MELIAN ELECTRIC CORP — Electricista en Florida" />
+  <meta property="og:description" content="Servicio eléctrico residencial y comercial en Florida. Paneles, cableado, iluminación, reparaciones y obra nueva. Presupuesto sin compromiso." />
+  <meta property="og:image" content="https://melianelectriccorp.com/img/og-cover.jpg" />
+  <meta property="og:url" content="https://melianelectriccorp.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon: volt lightning bolt -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2317181C'/%3E%3Cpath d='M56 12 30 56h18l-8 32 30-46H50z' fill='%23F5C518'/%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="img/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Saira:wght@500;600&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            volt: '#F5C518',
+            'volt-deep': '#E0A400',
+            night: '#17181C',
+            'night-2': '#1E2024',
+            char: '#26282E',
+            'char-2': '#2E3137',
+            paper: '#F4F3EF',
+            'paper-2': '#EAE8E1',
+            ink: '#1A1B1E',
+            steel: '#8A8F98',
+            'steel-d': '#5B6068',
+          },
+          fontFamily: {
+            display: ['"Saira Condensed"', 'system-ui', 'sans-serif'],
+            alt: ['Saira', 'system-ui', 'sans-serif'],
+            sans: ['Barlow', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- ════════════ DESIGN SYSTEM ════════════ -->
+  <style>
+    :root{
+      --volt:#F5C518; --volt-deep:#E0A400;
+      --night:#17181C; --char:#26282E; --char2:#2E3137;
+      --paper:#F4F3EF; --paper2:#EAE8E1;
+      --ink:#1A1B1E; --steel:#8A8F98; --steel-d:#5B6068;
+      --line-dark:rgba(255,255,255,.09);
+      --line-light:rgba(26,27,30,.12);
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Barlow',system-ui,sans-serif;background:var(--night);color:#ECEDEF;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    h1,h2,h3,.display{font-family:'Saira Condensed',system-ui,sans-serif;text-transform:uppercase;letter-spacing:.005em;line-height:.95;font-weight:700}
+    ::selection{background:var(--volt);color:#17181C}
+
+    /* fluid type scale (clamp) */
+    .t-hero{font-size:clamp(2.9rem,8vw,6.2rem)}
+    .t-h2{font-size:clamp(2.1rem,5vw,3.6rem)}
+    .t-h3{font-size:clamp(1.35rem,2.6vw,1.85rem)}
+
+    /* textures / motifs */
+    .grid-tex{background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:44px 44px}
+    .caution{background-image:repeating-linear-gradient(135deg,var(--volt) 0 14px,#17181C 14px 28px)}
+    .noise{position:relative}
+
+    /* section number tag */
+    .sec-no{font-family:'Saira',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.32em;color:var(--volt);display:inline-flex;align-items:center;gap:.6rem}
+    .sec-no::before{content:"";width:26px;height:2px;background:var(--volt);display:inline-block}
+
+    /* buttons */
+    .btn{display:inline-flex;align-items:center;gap:.6rem;font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.04em;font-weight:700;font-size:1.02rem;padding:.85rem 1.6rem;border-radius:3px;transition:transform .18s cubic-bezier(.2,.7,.3,1),background .18s,color .18s,box-shadow .18s;cursor:pointer;line-height:1}
+    .btn-volt{background:var(--volt);color:#17181C;box-shadow:0 8px 22px -8px rgba(245,197,24,.55)}
+    .btn-volt:hover{background:#ffd227;transform:translateY(-2px)}
+    .btn-ghost{background:transparent;color:#ECEDEF;border:1.5px solid rgba(255,255,255,.22)}
+    .btn-ghost:hover{border-color:var(--volt);color:var(--volt);transform:translateY(-2px)}
+    .btn-dark{background:var(--ink);color:#fff}
+    .btn-dark:hover{background:#000;transform:translateY(-2px)}
+
+    /* nav */
+    .nav-link{position:relative;font-weight:500;font-size:.95rem;color:#C9CBD0;transition:color .2s;padding:.2rem 0}
+    .nav-link:hover{color:#fff}
+    .nav-link::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:2px;background:var(--volt);transition:right .25s cubic-bezier(.2,.7,.3,1)}
+    .nav-link:hover::after{right:0}
+
+    /* cards */
+    .svc{background:var(--paper);border:1px solid var(--line-light);border-radius:4px;padding:1.6rem 1.5rem;transition:transform .2s,border-color .2s,box-shadow .2s}
+    .svc:hover{transform:translateY(-4px);border-color:rgba(245,197,24,.55);box-shadow:0 18px 40px -22px rgba(26,27,30,.4)}
+    .svc-ic{width:38px;height:38px;color:var(--ink)}
+    .svc:hover .svc-ic{color:var(--volt-deep)}
+
+    .step-no{font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:3.2rem;color:transparent;-webkit-text-stroke:1.5px var(--steel-d);line-height:1}
+
+    /* portfolio */
+    .filter-chip{font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.05em;font-weight:600;font-size:.95rem;padding:.42rem 1rem;border-radius:3px;color:var(--steel-d);border:1.5px solid var(--line-light);background:transparent;cursor:pointer;transition:all .18s}
+    .filter-chip:hover{color:var(--ink);border-color:var(--ink)}
+    .filter-chip.active{background:var(--ink);color:var(--volt);border-color:var(--ink)}
+    .shot{position:relative;overflow:hidden;border-radius:4px;cursor:pointer;background:#222}
+    .shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+    .shot:hover img{transform:scale(1.06)}
+    .shot::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(23,24,28,.55),transparent 45%);opacity:0;transition:opacity .25s}
+    .shot:hover::after{opacity:1}
+    .shot .cap{position:absolute;left:14px;bottom:12px;right:14px;z-index:2;opacity:0;transform:translateY(6px);transition:all .25s;font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.04em;font-weight:600;font-size:.95rem;color:#fff}
+    .shot:hover .cap{opacity:1;transform:none}
+    .shot .plus{position:absolute;top:12px;right:12px;z-index:2;width:30px;height:30px;border-radius:3px;background:var(--volt);color:#17181C;display:flex;align-items:center;justify-content:center;font-size:1.2rem;opacity:0;transform:scale(.7);transition:all .25s}
+    .shot:hover .plus{opacity:1;transform:none}
+
+    /* lightbox */
+    #lb{position:fixed;inset:0;z-index:90;background:rgba(11,12,14,.94);display:none;align-items:center;justify-content:center;padding:4vh 4vw}
+    #lb.open{display:flex}
+    #lb img{max-width:100%;max-height:92vh;object-fit:contain;border-radius:4px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+    #lb .x,#lb .ar,#lb .al{position:absolute;color:#fff;cursor:pointer;user-select:none;display:flex;align-items:center;justify-content:center;transition:color .2s,background .2s}
+    #lb .x{top:20px;right:24px;width:44px;height:44px;font-size:1.6rem;border:1.5px solid rgba(255,255,255,.3);border-radius:4px}
+    #lb .x:hover{color:var(--volt);border-color:var(--volt)}
+    #lb .ar,#lb .al{top:50%;transform:translateY(-50%);width:52px;height:52px;font-size:2rem;border-radius:50%}
+    #lb .ar{right:18px}#lb .al{left:18px}
+    #lb .ar:hover,#lb .al:hover{color:var(--volt)}
+
+    /* forms */
+    .fld{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line-dark);border-radius:4px;padding:.85rem 1rem;color:#fff;font-family:'Barlow',sans-serif;font-size:1rem;transition:border-color .2s,background .2s}
+    .fld::placeholder{color:#7B8088}
+    .fld:focus{outline:none;border-color:var(--volt);background:rgba(255,255,255,.06)}
+    label.lbl{font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.06em;font-weight:600;font-size:.82rem;color:var(--steel);display:block;margin-bottom:.4rem}
+
+    /* i18n */
+    [data-en],[data-es]{display:none}
+    body.lang-es [data-es]{display:inline}
+    body.lang-en [data-en]{display:inline}
+    [data-es-b],[data-en-b]{display:none !important}
+    body.lang-es [data-es-b]{display:block !important}
+    body.lang-en [data-en-b]{display:block !important}
+
+    /* reveal */
+    .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+    .rv.in{opacity:1;transform:none}
+    @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.shot img,.btn{transition:none}html{scroll-behavior:auto}}
+
+    .hairline{height:1px;background:var(--line-dark)}
+    .voltword{color:var(--volt)}
+
+    /* ── electrical animations ── */
+    /* moving caution tape */
+    @keyframes tapemove{to{background-position:40px 0}}
+    .caution-anim{animation:tapemove 1.6s linear infinite}
+    /* infinite marquee */
+    .marquee{display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+    .marquee__track{display:flex;flex-shrink:0;align-items:center;gap:0;white-space:nowrap;animation:scrollx 30s linear infinite}
+    @keyframes scrollx{to{transform:translateX(-50%)}}
+    /* pulsing volt glow */
+    @keyframes voltpulse{0%,100%{box-shadow:0 0 0 0 rgba(245,197,24,0)}50%{box-shadow:0 0 26px 1px rgba(245,197,24,.4)}}
+    .pulse{animation:voltpulse 2.8s ease-in-out infinite}
+    /* charging underline beneath the volt word */
+    .charge{position:relative}
+    .charge::after{content:"";position:absolute;left:0;right:0;bottom:-.04em;height:5px;background:linear-gradient(90deg,transparent,var(--volt) 35%,#fff 50%,var(--volt) 65%,transparent);background-size:220% 100%;border-radius:9999px;animation:chargeflow 2.6s linear infinite;opacity:.92}
+    @keyframes chargeflow{to{background-position:-220% 0}}
+    /* power-on flicker */
+    @keyframes flickerin{0%{opacity:0}8%{opacity:.5}11%{opacity:.15}18%{opacity:.85}21%{opacity:.35}30%,100%{opacity:1}}
+    .flicker{animation:flickerin 1.2s ease-out both}
+    /* travelling spark on svg line */
+    .spark-line{stroke-dasharray:7 13;animation:dashmove 1s linear infinite}
+    @keyframes dashmove{to{stroke-dashoffset:-20}}
+    /* lightning flash */
+    @keyframes boltflash{0%,72%,100%{opacity:.55;filter:drop-shadow(0 0 0 rgba(245,197,24,0))}80%{opacity:1;filter:drop-shadow(0 0 8px rgba(245,197,24,.85))}88%{opacity:.7}}
+    .bolt-flash{animation:boltflash 3.4s ease-in-out infinite}
+    /* slow float for hero chip */
+    @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    .floaty{animation:floaty 5s ease-in-out infinite}
+
+    @media (prefers-reduced-motion:reduce){
+      .rv{opacity:1;transform:none;transition:none}.shot img,.btn{transition:none}html{scroll-behavior:auto}
+      .caution-anim,.marquee__track,.pulse,.charge::after,.flicker,.spark-line,.bolt-flash,.floaty{animation:none}
+    }
+  </style>
+</head>
+
+<body class="lang-es">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-volt focus:text-night focus:px-4 focus:py-2 focus:rounded">Saltar al contenido</a>
+
+  <!-- ════════════ NAV ════════════ -->
+  <header id="top" class="fixed top-0 inset-x-0 z-50 bg-night/85 backdrop-blur-md border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-5 lg:px-8 h-[68px] flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3 shrink-0">
+        <img src="img/logo.png" alt="MELIAN ELECTRIC CORP" width="46" height="46" class="w-[46px] h-[46px]" />
+        <span class="leading-none hidden sm:block">
+          <span class="block font-display text-[1.35rem] tracking-wide text-white">MELIAN</span>
+          <span class="block font-alt text-[9px] tracking-[0.34em] text-volt font-semibold">ELECTRIC CORP</span>
+        </span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#services" class="nav-link"><span data-es>Servicios</span><span data-en>Services</span></a>
+        <a href="#about" class="nav-link"><span data-es>Nosotros</span><span data-en>About</span></a>
+        <a href="#work" class="nav-link"><span data-es>Trabajos</span><span data-en>Work</span></a>
+        <a href="#process" class="nav-link"><span data-es>Proceso</span><span data-en>Process</span></a>
+        <a href="#contact" class="nav-link"><span data-es>Contacto</span><span data-en>Contact</span></a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button onclick="toggleLang()" aria-label="Switch language" class="font-display text-sm tracking-wider text-steel hover:text-volt transition px-2 py-1 border border-white/15 rounded-[3px]">
+          <span data-es>EN</span><span data-en>ES</span>
+        </button>
+        <a href="tel:+17862461158" class="btn btn-volt text-[.95rem] px-4 py-2.5">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="hidden sm:inline">(786) 246-1158</span><span class="sm:hidden"><span data-es>Llamar</span><span data-en>Call</span></span>
+        </a>
+        <button onclick="toggleMenu()" aria-label="Menu" class="lg:hidden w-10 h-10 flex items-center justify-center text-white">
+          <svg id="burger" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="lg:hidden hidden border-t border-white/10 bg-night-2 px-5 py-4">
+      <div class="flex flex-col gap-1 font-display uppercase tracking-wide text-lg">
+        <a href="#services" onclick="closeMenu()" class="py-2 text-white"><span data-es>Servicios</span><span data-en>Services</span></a>
+        <a href="#about" onclick="closeMenu()" class="py-2 text-white"><span data-es>Nosotros</span><span data-en>About</span></a>
+        <a href="#work" onclick="closeMenu()" class="py-2 text-white"><span data-es>Trabajos</span><span data-en>Work</span></a>
+        <a href="#process" onclick="closeMenu()" class="py-2 text-white"><span data-es>Proceso</span><span data-en>Process</span></a>
+        <a href="#contact" onclick="closeMenu()" class="py-2 text-volt"><span data-es>Contacto</span><span data-en>Contact</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+  <!-- ════════════ HERO ════════════ -->
+  <section class="relative pt-[68px] grid-tex">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-[1.05fr_.95fr] items-stretch">
+      <!-- left -->
+      <div class="px-5 lg:px-8 py-14 lg:py-24 flex flex-col justify-center">
+        <p class="sec-no rv"><span data-es>Electricista de oficio en Florida</span><span data-en>Licensed electrician in Florida</span></p>
+        <h1 class="t-hero mt-6 rv" style="transition-delay:.05s">
+          <span data-es-b>Potencia que<br><span class="voltword charge">no falla.</span></span>
+          <span data-en-b>Power you<br><span class="voltword charge">can trust.</span></span>
+        </h1>
+        <p class="mt-7 max-w-[52ch] text-[1.12rem] leading-relaxed text-[#C4C7CD] rv" style="transition-delay:.1s">
+          <span data-es>Servicio eléctrico <strong class="text-white font-semibold">residencial y comercial</strong> en Florida. Paneles, cableado, iluminación, reparaciones y obra nueva — hechos con criterio y para durar.</span>
+          <span data-en>Licensed <strong class="text-white font-semibold">residential &amp; commercial</strong> electrical service in Florida. Panels, wiring, lighting, repairs and new construction — done right, built to last.</span>
+        </p>
+        <div class="mt-9 flex flex-wrap gap-3 rv" style="transition-delay:.15s">
+          <a href="#contact" class="btn btn-volt"><span data-es>Presupuesto gratis</span><span data-en>Free estimate</span></a>
+          <a href="tel:+17862461158" class="btn btn-ghost">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (786) 246-1158
+          </a>
+        </div>
+        <!-- trust row -->
+        <div class="mt-11 flex flex-wrap items-center gap-x-7 gap-y-3 rv" style="transition-delay:.2s">
+          <span class="flex items-center gap-2 text-sm text-[#C4C7CD]"><svg class="w-4 h-4 text-volt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span data-es>Licensed &amp; Insured</span><span data-en>Licensed &amp; Insured</span></span>
+          <span class="flex items-center gap-2 text-sm text-[#C4C7CD]"><svg class="w-4 h-4 text-volt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span data-es>Trato directo con el dueño</span><span data-en>Owner-operated</span></span>
+          <span class="flex items-center gap-2 text-sm text-[#C4C7CD]"><svg class="w-4 h-4 text-volt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span data-es>Presupuesto sin compromiso</span><span data-en>Free, no-pressure quotes</span></span>
+        </div>
+      </div>
+      <!-- right: tall portrait photo -->
+      <div class="relative min-h-[440px] lg:min-h-0">
+        <div class="absolute top-0 left-0 w-2 h-28 caution caution-anim z-10 hidden lg:block"></div>
+        <picture>
+          <source type="image/webp" srcset="img/hero-panel-1200.webp" />
+          <img src="img/hero-panel-1200.jpg" alt="Panel de distribución eléctrica comercial con breakers y cableado rojo, negro y azul perfectamente organizado — MELIAN ELECTRIC CORP" class="w-full h-full object-cover" />
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-r from-night via-transparent to-transparent lg:block hidden"></div>
+        <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-night to-transparent lg:hidden"></div>
+        <div class="absolute bottom-5 right-5 bg-night/85 backdrop-blur border border-white/10 rounded-[4px] px-4 py-3 pulse floaty">
+          <p class="font-display text-volt text-2xl leading-none">100%</p>
+          <p class="text-[#C4C7CD] text-xs tracking-wide mt-1"><span data-es>Trabajo verificable</span><span data-en>Real, verifiable work</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ MARQUEE STRIP (animated) ════════════ -->
+  <div class="bg-volt text-night border-y border-black/10 py-3.5">
+    <div class="marquee">
+      <div class="marquee__track font-display uppercase tracking-wide text-[1.02rem]">
+        <span class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span class="px-3"><span data-es>Paneles &amp; upgrades</span><span data-en>Panels &amp; upgrades</span></span>
+        <span class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span class="px-3"><span data-es>Cableado estructurado</span><span data-en>Structured wiring</span></span>
+        <span class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span class="px-3"><span data-es>Iluminación</span><span data-en>Lighting</span></span>
+        <span class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span class="px-3"><span data-es>Reparaciones</span><span data-en>Repairs</span></span>
+        <span class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span class="px-3"><span data-es>Obra nueva</span><span data-en>New construction</span></span>
+        <span class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span class="px-3"><span data-es>Diagnóstico</span><span data-en>Troubleshooting</span></span>
+        <span class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span class="px-3"><span data-es>Residencial &amp; comercial</span><span data-en>Residential &amp; commercial</span></span>
+        <span aria-hidden="true" class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span aria-hidden="true" class="px-3"><span data-es>Paneles &amp; upgrades</span><span data-en>Panels &amp; upgrades</span></span>
+        <span aria-hidden="true" class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span aria-hidden="true" class="px-3"><span data-es>Cableado estructurado</span><span data-en>Structured wiring</span></span>
+        <span aria-hidden="true" class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span aria-hidden="true" class="px-3"><span data-es>Iluminación</span><span data-en>Lighting</span></span>
+        <span aria-hidden="true" class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span aria-hidden="true" class="px-3"><span data-es>Reparaciones</span><span data-en>Repairs</span></span>
+        <span aria-hidden="true" class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span aria-hidden="true" class="px-3"><span data-es>Obra nueva</span><span data-en>New construction</span></span>
+        <span aria-hidden="true" class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span aria-hidden="true" class="px-3"><span data-es>Diagnóstico</span><span data-en>Troubleshooting</span></span>
+        <span aria-hidden="true" class="px-5 flex items-center gap-2 bolt-flash">⚡</span><span aria-hidden="true" class="px-3"><span data-es>Residencial &amp; comercial</span><span data-en>Residential &amp; commercial</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════ SERVICES ════════════ -->
+  <section id="services" class="bg-paper text-ink py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+        <div>
+          <p class="sec-no rv" style="color:var(--volt-deep)"><span style="color:var(--steel-d)">01 —</span>&nbsp;<span data-es>Servicios</span><span data-en>Services</span></p>
+          <h2 class="t-h2 mt-4 rv text-ink"><span data-es-b>Todo lo eléctrico,<br>bajo un mismo techo</span><span data-en-b>Every electrical need,<br>under one roof</span></h2>
+        </div>
+        <p class="max-w-[40ch] text-[#454a52] rv md:text-right">
+          <span data-es>Desde un breaker que salta hasta el cableado completo de un local nuevo. Si lleva corriente, lo resolvemos.</span>
+          <span data-en>From a tripping breaker to wiring an entire new build. If it carries current, we handle it.</span>
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- 1 -->
+        <article class="svc rv">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/><path d="M12 3v5"/></svg>
+          <h3 class="font-sans font-bold text-xl mt-4"><span data-es>Eléctrico residencial</span><span data-en>Residential electrical</span></h3>
+          <p class="mt-2 text-[#454a52] text-[.97rem] leading-relaxed"><span data-es>Cableado, tomacorrientes, abanicos, iluminación y reparaciones para su casa.</span><span data-en>Wiring, outlets, fans, lighting and repairs for your home.</span></p>
+        </article>
+        <!-- 2 -->
+        <article class="svc rv" style="transition-delay:.05s">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-3"/><path d="M9 9v0M9 13v0M9 17v0"/></svg>
+          <h3 class="font-sans font-bold text-xl mt-4"><span data-es>Comercial e industrial</span><span data-en>Commercial &amp; industrial</span></h3>
+          <p class="mt-2 text-[#454a52] text-[.97rem] leading-relaxed"><span data-es>Locales, oficinas y naves: cableado estructurado, conduit y tableros a código.</span><span data-en>Stores, offices and warehouses: structured wiring, conduit and code-compliant panels.</span></p>
+        </article>
+        <!-- 3 -->
+        <article class="svc rv" style="transition-delay:.1s">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="2" width="14" height="20" rx="1.5"/><path d="M9 6h6M9 10h6M9 14h6"/></svg>
+          <h3 class="font-sans font-bold text-xl mt-4"><span data-es>Paneles y upgrades</span><span data-en>Panels &amp; service upgrades</span></h3>
+          <p class="mt-2 text-[#454a52] text-[.97rem] leading-relaxed"><span data-es>Cambio y ampliación de paneles, breakers y servicio eléctrico de mayor capacidad.</span><span data-en>Panel changes and upgrades, breakers and higher-capacity service.</span></p>
+        </article>
+        <!-- 4 -->
+        <article class="svc rv">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg>
+          <h3 class="font-sans font-bold text-xl mt-4"><span data-es>Iluminación</span><span data-en>Lighting</span></h3>
+          <p class="mt-2 text-[#454a52] text-[.97rem] leading-relaxed"><span data-es>Diseño e instalación de iluminación LED, recessed, exterior y de comercio.</span><span data-en>LED, recessed, outdoor and retail lighting design and install.</span></p>
+        </article>
+        <!-- 5 -->
+        <article class="svc rv" style="transition-delay:.05s">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2 4 14h7l-1 8 10-12h-7z"/></svg>
+          <h3 class="font-sans font-bold text-xl mt-4"><span data-es>Diagnóstico y reparaciones</span><span data-en>Troubleshooting &amp; repairs</span></h3>
+          <p class="mt-2 text-[#454a52] text-[.97rem] leading-relaxed"><span data-es>Cortocircuitos, breakers que saltan, tomas sin corriente — encontramos la falla.</span><span data-en>Shorts, tripping breakers, dead outlets — we find the fault.</span></p>
+        </article>
+        <!-- 6 -->
+        <article class="svc rv" style="transition-delay:.1s">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 20h20M4 20V9l8-5 8 5v11"/><path d="M9 20v-5h6v5"/></svg>
+          <h3 class="font-sans font-bold text-xl mt-4"><span data-es>Obra nueva</span><span data-en>New construction</span></h3>
+          <p class="mt-2 text-[#454a52] text-[.97rem] leading-relaxed"><span data-es>Cableado eléctrico completo para construcción y remodelación desde cero.</span><span data-en>Full electrical rough-in for new builds and remodels from the ground up.</span></p>
+        </article>
+      </div>
+      <p class="mt-8 text-sm text-[#6a6f77] rv"><span data-es>¿No ve lo que busca? Pregúntenos — si es eléctrico, probablemente lo hacemos.</span><span data-en>Don't see what you need? Just ask — if it's electrical, we likely do it.</span></p>
+    </div>
+  </section>
+
+  <!-- ════════════ CRAFT SHOWCASE (metal conduit) ════════════ -->
+  <section class="bg-night grid-tex overflow-hidden">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 items-stretch">
+      <div class="px-5 lg:px-8 py-16 lg:py-24 flex flex-col justify-center order-2 lg:order-1">
+        <p class="sec-no rv"><span data-es>Detalle que se nota</span><span data-en>Detail that shows</span></p>
+        <h2 class="t-h2 mt-4 rv max-w-[16ch]"><span data-es-b>La diferencia está<br>en el <span class="voltword">detalle</span></span><span data-en-b>The difference is<br>in the <span class="voltword">detail</span></span></h2>
+        <p class="mt-6 max-w-[50ch] text-[1.08rem] leading-relaxed text-[#C4C7CD] rv" style="transition-delay:.05s">
+          <span data-es>Tubería de metal doblada a mano, curvas paralelas perfectas, todo alineado y a código. No es solo que funcione — es que esté <strong class="text-white">bien hecho</strong>. Ese cuidado es el que protege su propiedad por años.</span>
+          <span data-en>Hand-bent metal conduit, perfectly parallel sweeps, everything aligned and to code. It's not just that it works — it's that it's <strong class="text-white">done right</strong>. That care is what protects your property for years.</span>
+        </p>
+        <div class="mt-8 flex flex-wrap gap-x-8 gap-y-3 rv" style="transition-delay:.1s">
+          <span class="flex items-center gap-2 text-[#C4C7CD]"><svg class="w-5 h-5 text-volt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-es>Instalación a código</span><span data-en>Code-compliant</span></span>
+          <span class="flex items-center gap-2 text-[#C4C7CD]"><svg class="w-5 h-5 text-volt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-es>Acabado prolijo</span><span data-en>Clean finish</span></span>
+        </div>
+      </div>
+      <div class="relative min-h-[420px] lg:min-h-0 order-1 lg:order-2">
+        <div class="absolute top-0 right-0 w-2 h-28 caution caution-anim z-10 hidden lg:block"></div>
+        <picture>
+          <source type="image/webp" srcset="img/conduit-metal-1200.webp" />
+          <img src="img/conduit-metal-1200.jpg" alt="Tubería de metal galvanizado con curvas paralelas perfectas entrando a un switchgear — trabajo de MELIAN ELECTRIC CORP" class="w-full h-full object-cover" loading="lazy" />
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-l from-night via-transparent to-transparent lg:block hidden"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ ABOUT ════════════ -->
+  <section id="about" class="bg-night grid-tex py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="relative rv">
+        <div class="absolute -top-3 -left-3 w-24 h-2 caution"></div>
+        <picture>
+          <source type="image/webp" srcset="img/miguel-panel-1280.webp" />
+          <img src="img/miguel-panel-1280.jpg" alt="Técnico de MELIAN ELECTRIC CORP instalando cableado en un panel eléctrico" class="w-full rounded-[4px] border border-white/10" loading="lazy" />
+        </picture>
+      </div>
+      <div>
+        <p class="sec-no rv"><span style="color:var(--steel)">02 —</span>&nbsp;<span data-es>Nosotros</span><span data-en>About</span></p>
+        <h2 class="t-h2 mt-4 rv"><span data-es-b>Manos con oficio,<br>no improvisación</span><span data-en-b>A real tradesman,<br>not a guess</span></h2>
+        <div class="mt-6 space-y-4 text-[1.08rem] leading-relaxed text-[#C4C7CD] rv" style="transition-delay:.05s">
+          <p data-es-b>MELIAN ELECTRIC CORP es la empresa de <strong class="text-white">José Miguel Melián</strong>, electricista de oficio en Florida. Años en obra le enseñaron lo que ningún atajo enseña: un trabajo eléctrico se hace bien una vez, prolijo y a código, para que usted no vuelva a pensar en él.</p>
+          <p data-en-b>MELIAN ELECTRIC CORP is the company of <strong class="text-white">José Miguel Melián</strong>, a Florida electrician by trade. Years in the field taught him what shortcuts never do: electrical work is done right once — clean and to code — so you never have to think about it again.</p>
+          <p data-es-b>Cuando llama, habla con quien hace el trabajo. Sin call centers, sin sorpresas en la factura: le explicamos qué necesita, qué cuesta y por qué.</p>
+          <p data-en-b>When you call, you talk to the person doing the work. No call centers, no billing surprises: we tell you what you need, what it costs, and why.</p>
+        </div>
+        <div class="mt-8 grid grid-cols-3 gap-4 rv" style="transition-delay:.1s">
+          <div>
+            <p class="font-display text-volt text-4xl leading-none">★★★★★</p>
+            <p class="text-sm text-steel mt-2 font-display tracking-wide uppercase"><span data-es>Trabajo prolijo</span><span data-en>Clean work</span></p>
+          </div>
+          <div class="border-l border-white/10 pl-4">
+            <p class="font-display text-volt text-4xl leading-none">1:1</p>
+            <p class="text-sm text-steel mt-2 font-display tracking-wide uppercase"><span data-es>Atención del dueño</span><span data-en>Owner attention</span></p>
+          </div>
+          <div class="border-l border-white/10 pl-4">
+            <p class="font-display text-volt text-4xl leading-none">24/7</p>
+            <p class="text-sm text-steel mt-2 font-display tracking-wide uppercase"><span data-es>Disponibilidad*</span><span data-en>Availability*</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ PORTFOLIO ════════════ -->
+  <section id="work" class="bg-paper text-ink py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-9">
+        <div>
+          <p class="sec-no rv" style="color:var(--volt-deep)"><span style="color:var(--steel-d)">03 —</span>&nbsp;<span data-es>Trabajos reales</span><span data-en>Real work</span></p>
+          <h2 class="t-h2 mt-4 rv text-ink"><span data-es-b>El trabajo habla<br>por sí solo</span><span data-en-b>The work speaks<br>for itself</span></h2>
+        </div>
+        <div class="flex flex-wrap gap-2 rv" id="filters">
+          <button class="filter-chip active" data-f="all"><span data-es>Todos</span><span data-en>All</span></button>
+          <button class="filter-chip" data-f="panels"><span data-es>Paneles</span><span data-en>Panels</span></button>
+          <button class="filter-chip" data-f="wiring"><span data-es>Cableado</span><span data-en>Wiring</span></button>
+          <button class="filter-chip" data-f="commercial"><span data-es>Comercial</span><span data-en>Commercial</span></button>
+          <button class="filter-chip" data-f="residential"><span data-es>Residencial</span><span data-en>Residential</span></button>
+        </div>
+      </div>
+
+      <!-- masonry-ish via columns -->
+      <div id="gallery" class="gap-4 [column-count:2] md:[column-count:3] lg:[column-count:4] [column-gap:1rem]"></div>
+    </div>
+  </section>
+
+  <!-- ════════════ PROCESS ════════════ -->
+  <section id="process" class="bg-night-2 grid-tex py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <p class="sec-no rv"><span style="color:var(--steel)">04 —</span>&nbsp;<span data-es>Cómo trabajamos</span><span data-en>How it works</span></p>
+      <h2 class="t-h2 mt-4 mb-12 rv max-w-[18ch]"><span data-es-b>Simple, claro y sin vueltas</span><span data-en-b>Simple, clear, no runaround</span></h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+        <div class="rv">
+          <span class="step-no">01</span>
+          <div class="w-12 h-[3px] bg-volt my-4"></div>
+          <h3 class="font-sans font-bold text-xl"><span data-es>Usted llama</span><span data-en>You call</span></h3>
+          <p class="mt-2 text-[#aab0b8] leading-relaxed"><span data-es>Nos cuenta qué necesita. Escuchamos y agendamos la visita.</span><span data-en>Tell us what you need. We listen and schedule a visit.</span></p>
+        </div>
+        <div class="rv" style="transition-delay:.05s">
+          <span class="step-no">02</span>
+          <div class="w-12 h-[3px] bg-volt my-4"></div>
+          <h3 class="font-sans font-bold text-xl"><span data-es>Presupuesto claro</span><span data-en>Clear estimate</span></h3>
+          <p class="mt-2 text-[#aab0b8] leading-relaxed"><span data-es>Revisamos el trabajo y le damos un precio honesto, sin letra chica.</span><span data-en>We assess the job and give an honest price — no fine print.</span></p>
+        </div>
+        <div class="rv" style="transition-delay:.1s">
+          <span class="step-no">03</span>
+          <div class="w-12 h-[3px] bg-volt my-4"></div>
+          <h3 class="font-sans font-bold text-xl"><span data-es>Lo hacemos bien</span><span data-en>We do it right</span></h3>
+          <p class="mt-2 text-[#aab0b8] leading-relaxed"><span data-es>Trabajo prolijo, a código y a tiempo. Dejamos todo limpio.</span><span data-en>Clean, code-compliant, on time. We leave it tidy.</span></p>
+        </div>
+        <div class="rv" style="transition-delay:.15s">
+          <span class="step-no">04</span>
+          <div class="w-12 h-[3px] bg-volt my-4"></div>
+          <h3 class="font-sans font-bold text-xl"><span data-es>Queda funcionando</span><span data-en>It just works</span></h3>
+          <p class="mt-2 text-[#aab0b8] leading-relaxed"><span data-es>Probamos todo con usted y respondemos cualquier duda después.</span><span data-en>We test it with you and stay available for any questions.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ CONTACT ════════════ -->
+  <section id="contact" class="bg-night py-20 lg:py-28 relative">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20">
+      <div>
+        <p class="sec-no rv"><span style="color:var(--steel)">05 —</span>&nbsp;<span data-es>Contacto</span><span data-en>Contact</span></p>
+        <h2 class="t-h2 mt-4 rv"><span data-es-b>Hablemos de<br>su proyecto</span><span data-en-b>Let's talk about<br>your project</span></h2>
+        <p class="mt-6 text-[1.08rem] text-[#C4C7CD] max-w-[44ch] rv" style="transition-delay:.05s"><span data-es>Cuéntenos qué necesita y le respondemos rápido. El presupuesto es gratis y sin compromiso.</span><span data-en>Tell us what you need and we'll get back fast. Estimates are free, no obligation.</span></p>
+
+        <div class="mt-9 space-y-3 rv" style="transition-delay:.1s">
+          <a href="tel:+17862461158" class="flex items-center gap-4 group">
+            <span class="w-11 h-11 rounded-[4px] bg-char flex items-center justify-center text-volt group-hover:bg-volt group-hover:text-night transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span><span class="block text-xs text-steel font-display tracking-widest uppercase"><span data-es>Llámenos</span><span data-en>Call us</span></span><span class="block text-lg text-white font-semibold">(786) 246-1158</span></span>
+          </a>
+          <a href="https://wa.me/17862461158" target="_blank" rel="noopener" class="flex items-center gap-4 group">
+            <span class="w-11 h-11 rounded-[4px] bg-char flex items-center justify-center text-volt group-hover:bg-volt group-hover:text-night transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.115zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></span>
+            <span><span class="block text-xs text-steel font-display tracking-widest uppercase">WhatsApp</span><span class="block text-lg text-white font-semibold">(786) 246-1158</span></span>
+          </a>
+          <a href="mailto:miguelmelian737@gmail.com" class="flex items-center gap-4 group">
+            <span class="w-11 h-11 rounded-[4px] bg-char flex items-center justify-center text-volt group-hover:bg-volt group-hover:text-night transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
+            <span><span class="block text-xs text-steel font-display tracking-widest uppercase">Email</span><span class="block text-lg text-white font-semibold">miguelmelian737@gmail.com</span></span>
+          </a>
+          <div class="flex items-center gap-4 pt-1">
+            <span class="w-11 h-11 rounded-[4px] bg-char flex items-center justify-center text-volt"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span><span class="block text-xs text-steel font-display tracking-widest uppercase"><span data-es>Zona de servicio</span><span data-en>Service area</span></span><span class="block text-lg text-white font-semibold"><span data-es>Todo el sur de Florida*</span><span data-en>South Florida*</span></span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- form -->
+      <div class="rv" style="transition-delay:.1s">
+        <form id="leadForm" class="bg-char-2 border border-white/10 rounded-[6px] p-6 lg:p-8">
+          <div class="w-16 h-1.5 caution mb-6"></div>
+          <h3 class="font-display text-2xl uppercase mb-6 text-white"><span data-es>Pida su presupuesto</span><span data-en>Request your estimate</span></h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="lbl" for="f-name"><span data-es>Nombre</span><span data-en>Name</span></label>
+              <input id="f-name" name="name" required class="fld" placeholder="José Pérez" />
+            </div>
+            <div>
+              <label class="lbl" for="f-phone"><span data-es>Teléfono</span><span data-en>Phone</span></label>
+              <input id="f-phone" name="phone" type="tel" required class="fld" placeholder="(305) 000-0000" />
+            </div>
+          </div>
+          <div class="mt-4">
+            <label class="lbl" for="f-type"><span data-es>Tipo de trabajo</span><span data-en>Type of work</span></label>
+            <select id="f-type" name="type" class="fld">
+              <option data-es-opt="Residencial" data-en-opt="Residential">Residencial</option>
+              <option data-es-opt="Comercial" data-en-opt="Commercial">Comercial</option>
+              <option data-es-opt="Cambio de panel" data-en-opt="Panel upgrade">Cambio de panel</option>
+              <option data-es-opt="Reparación / diagnóstico" data-en-opt="Repair / troubleshooting">Reparación / diagnóstico</option>
+              <option data-es-opt="Obra nueva" data-en-opt="New construction">Obra nueva</option>
+              <option data-es-opt="Otro" data-en-opt="Other">Otro</option>
+            </select>
+          </div>
+          <div class="mt-4">
+            <label class="lbl" for="f-msg"><span data-es>Cuéntenos qué necesita</span><span data-en>Tell us what you need</span></label>
+            <textarea id="f-msg" name="message" rows="4" class="fld" placeholder=""></textarea>
+          </div>
+          <button type="submit" class="btn btn-volt w-full justify-center mt-6 py-3.5 text-lg">
+            <span data-es>Enviar solicitud</span><span data-en>Send request</span>
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p id="formNote" class="mt-3 text-sm text-steel text-center"><span data-es>Abre su correo con el mensaje listo para enviar.</span><span data-en>Opens your email app with the message ready to send.</span></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer class="bg-night border-t border-white/10">
+    <div class="h-1.5 caution"></div>
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 py-12 grid md:grid-cols-[1.5fr_1fr_1fr] gap-10">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="img/logo.png" alt="MELIAN ELECTRIC CORP" width="48" height="48" class="w-12 h-12" loading="lazy" />
+          <span class="leading-none"><span class="block font-display text-xl text-white">MELIAN</span><span class="block font-alt text-[9px] tracking-[0.34em] text-volt font-semibold">ELECTRIC CORP</span></span>
+        </div>
+        <p class="mt-5 text-[#9aa0a8] max-w-[38ch] leading-relaxed"><span data-es>Servicio eléctrico residencial y comercial en Florida. Trabajo prolijo, a código y para durar.</span><span data-en>Residential &amp; commercial electrical service in Florida. Clean, code-compliant work, built to last.</span></p>
+      </div>
+      <div>
+        <p class="font-display uppercase tracking-wider text-sm text-steel mb-4"><span data-es>Servicios</span><span data-en>Services</span></p>
+        <ul class="space-y-2 text-[#C4C7CD]">
+          <li><a href="#services" class="hover:text-volt transition"><span data-es>Residencial</span><span data-en>Residential</span></a></li>
+          <li><a href="#services" class="hover:text-volt transition"><span data-es>Comercial</span><span data-en>Commercial</span></a></li>
+          <li><a href="#services" class="hover:text-volt transition"><span data-es>Paneles</span><span data-en>Panels</span></a></li>
+          <li><a href="#work" class="hover:text-volt transition"><span data-es>Trabajos</span><span data-en>Work</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display uppercase tracking-wider text-sm text-steel mb-4"><span data-es>Contacto</span><span data-en>Contact</span></p>
+        <ul class="space-y-2 text-[#C4C7CD]">
+          <li><a href="tel:+17862461158" class="hover:text-volt transition">(786) 246-1158</a></li>
+          <li><a href="mailto:miguelmelian737@gmail.com" class="hover:text-volt transition break-all">miguelmelian737@gmail.com</a></li>
+          <li><span data-es>Florida, EE.UU.</span><span data-en>Florida, USA</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-steel-d">
+        <p>© <span id="yr"></span> MELIAN ELECTRIC CORP. <span data-es>Todos los derechos reservados.</span><span data-en>All rights reserved.</span></p>
+        <p class="font-display tracking-wide uppercase text-xs">Florida · USA</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- lightbox -->
+  <div id="lb" aria-hidden="true">
+    <span class="al" onclick="lbStep(-1)">‹</span>
+    <img id="lbImg" src="" alt="" />
+    <span class="ar" onclick="lbStep(1)">›</span>
+    <span class="x" onclick="lbClose()" aria-label="Cerrar">✕</span>
+  </div>
+
+  <!-- ════════════ SCRIPTS ════════════ -->
+  <script>
+    /* ---- gallery data ---- */
+    const SHOTS = [
+      {b:'wiring-color', c:'wiring', es:'Cableado estructurado por colores', en:'Color-coded structured wiring'},
+      {b:'panel-commercial', c:'panels', es:'Panel de distribución comercial', en:'Commercial distribution panel'},
+      {b:'conduit-runs', c:'commercial', es:'Corridas de conduit en obra', en:'Commercial conduit runs'},
+      {b:'panel-clean', c:'residential', es:'Panel residencial en pared acabada', en:'Residential panel, finished wall'},
+      {b:'service-bank', c:'panels', es:'Banco de medidores y disconnects', en:'Meter & disconnect bank'},
+      {b:'wiring-panel', c:'wiring', es:'Cableado dentro de tablero de control', en:'Wiring inside a control panel'},
+      {b:'residential-ext', c:'residential', es:'Instalación exterior residencial', en:'Outdoor residential install'},
+      {b:'switchgear', c:'panels', es:'Switchgear y tableros industriales', en:'Industrial switchgear'},
+      {b:'conduit-ceiling', c:'commercial', es:'Tubería organizada en techo', en:'Organized ceiling conduit'},
+      {b:'panel-breakers', c:'panels', es:'Panel de breakers organizado', en:'Neatly organized breaker panel'},
+      {b:'miguel-meter', c:'commercial', es:'Trabajo en panel de servicio', en:'Work on a service panel'},
+      {b:'field-site', c:'commercial', es:'Trabajo eléctrico en obra nueva', en:'Electrical work on a new build'},
+    ];
+    const gallery = document.getElementById('gallery');
+    let lang = localStorage.getItem('melian_lang') || 'es';
+
+    function buildGallery(){
+      gallery.innerHTML = SHOTS.map((s,i)=>`
+        <figure class="shot mb-4 break-inside-avoid rv" data-cat="${s.c}" data-i="${i}" onclick="lbOpen(${i})">
+          <picture>
+            <source type="image/webp" srcset="img/${s.b}-640.webp" />
+            <img src="img/${s.b}-640.jpg" alt="${s[lang]} — MELIAN ELECTRIC CORP" loading="lazy" />
+          </picture>
+          <span class="plus">+</span>
+          <figcaption class="cap">${s[lang]}</figcaption>
+        </figure>`).join('');
+      revealObserve();
+    }
+
+    /* ---- filter ---- */
+    document.getElementById('filters').addEventListener('click', e=>{
+      const btn = e.target.closest('.filter-chip'); if(!btn) return;
+      document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.f;
+      document.querySelectorAll('#gallery .shot').forEach(el=>{
+        el.style.display = (f==='all'||el.dataset.cat===f) ? '' : 'none';
+      });
+    });
+
+    /* ---- lightbox ---- */
+    let lbList=[], lbIdx=0;
+    const lbImg=document.getElementById('lbImg'), lb=document.getElementById('lb');
+    function lbOpen(i){
+      lbList = [...document.querySelectorAll('#gallery .shot')].filter(el=>el.style.display!=='none');
+      lbIdx = lbList.findIndex(el=>+el.dataset.i===i);
+      if(lbIdx<0) lbIdx=0;
+      showLb();
+      lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden';
+    }
+    function showLb(){
+      const i=+lbList[lbIdx].dataset.i, s=SHOTS[i];
+      lbImg.src=`img/${s.b}-1280.jpg`; lbImg.alt=s[lang];
+    }
+    function lbStep(d){ lbIdx=(lbIdx+d+lbList.length)%lbList.length; showLb(); }
+    function lbClose(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+    lb.addEventListener('click', e=>{ if(e.target===lb) lbClose(); });
+    document.addEventListener('keydown', e=>{ if(!lb.classList.contains('open'))return; if(e.key==='Escape')lbClose(); if(e.key==='ArrowRight')lbStep(1); if(e.key==='ArrowLeft')lbStep(-1); });
+
+    /* ---- language ---- */
+    function applyLang(){
+      document.body.classList.toggle('lang-es', lang==='es');
+      document.body.classList.toggle('lang-en', lang==='en');
+      document.documentElement.lang = lang;
+      // select options
+      document.querySelectorAll('#f-type option').forEach(o=>{ o.textContent = lang==='es'?o.dataset.esOpt:o.dataset.enOpt; });
+      buildGallery();
+    }
+    function toggleLang(){ lang = lang==='es'?'en':'es'; localStorage.setItem('melian_lang',lang); applyLang(); }
+
+    /* ---- form -> mailto (no backend) ---- */
+    document.getElementById('leadForm').addEventListener('submit', e=>{
+      e.preventDefault();
+      const f=e.target;
+      const subj = (lang==='es'?'Solicitud de presupuesto — ':'Estimate request — ')+f.name.value;
+      const body =
+        (lang==='es'?'Nombre: ':'Name: ')+f.name.value+'\n'+
+        (lang==='es'?'Teléfono: ':'Phone: ')+f.phone.value+'\n'+
+        (lang==='es'?'Tipo: ':'Type: ')+f.type.value+'\n\n'+
+        f.message.value;
+      window.location.href='mailto:miguelmelian737@gmail.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+    });
+
+    /* ---- reveal on scroll ---- */
+    let io;
+    function revealObserve(){
+      if(!io){
+        io = new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} }),{threshold:.12});
+      }
+      document.querySelectorAll('.rv:not(.in)').forEach(el=>io.observe(el));
+    }
+
+    /* ---- mobile menu ---- */
+    function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('hidden'); }
+    function closeMenu(){ document.getElementById('mobileMenu').classList.add('hidden'); }
+
+    /* init */
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    applyLang();
+    revealObserve();
+  </script>
+</body>
+</html>
